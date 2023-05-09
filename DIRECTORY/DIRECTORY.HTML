@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image" rel="icon"
+        href="C:\Users\randy\OneDrive\Escritorio\ProyectosCursoEmmanuel\EmmaHomeworks\DIRECTORY\Imgs\mainIcon.png">
+    <title>Directory</title>
+    <link rel="stylesheet"
+        href="C:\Users\randy\OneDrive\Escritorio\ProyectosCursoEmmanuel\EmmaHomeworks\DIRECTORY\DIRECTORY.CSS">
+</head>
+
+<body>
+    <div class="main-container">
+        <!-- input record -->
+        <div class="record-input">
+            <h1 class="h1">Contact Details</h1>
+            <div class="entry-form">
+                <div class="mainForm">
+                    <label for="name">Name</label>
+                    <input type="text" id="name">
+
+                    <label for="address">Status</label>
+                    <input type="text" id="address">
+
+                    <label for="contact-num">Phone Number</label>
+                    <input type="text"" id="contact-num">
+
+                    <label for="UploadImg">Upload Img</label>
+                    <input type="file" accept="image/*" id="UploadImg" >
+                    
+                    <label for="imgPreview">Img Preview</label>
+                    <img id="imgPreview" alt="" style="display: none;"     >
+                </div>
+                <span class="message"></span>
+
+                <div class="input-btns">
+                    <button type="submit" id="submit-btn">
+                        <span>
+                        </span> Add Contact
+                    </button>
+                    <button type="button" id="cancel-btn">
+                        <span>
+                        </span> Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="record-display">
+            <button type="button" id="clear-btn">
+                Clear
+            </button>
+            <h1 class="h1">Available Contacts: </h1>
+            <input type="search" id="mainInputSearch" placeholder="Search" >
+            <div class="record-container">
+                <table id="recordTable">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>NAME</th>
+                            <th>STATUS</th>
+                            <th>PHONE NUMBER</th>
+                            <th><img src="C:\Users\randy\OneDrive\Escritorio\ProyectosCursoEmmanuel\EmmaHomeworks\DIRECTORY\Imgs\editar.png"
+                                    alt="editImg"></th>
+                            <th><img src="C:\Users\randy\OneDrive\Escritorio\ProyectosCursoEmmanuel\EmmaHomeworks\DIRECTORY\Imgs\borrar.png"
+                                    alt="deleteImg"></th>    
+                        </tr>
+                    </thead>
+                    <tbody id="recordTableBody"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script
+        src="C:\Users\randy\OneDrive\Escritorio\ProyectosCursoEmmanuel\EmmaHomeworks\DIRECTORY\DIRECTORY.JS"></script>
+</body>
+
+</html>
